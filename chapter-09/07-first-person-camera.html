@@ -101,8 +101,8 @@
 
         var loader = new THREE.OBJMTLLoader();
         var load = function (object) {
-            var scale = chroma.scale(['red', 'green', 'blue']);
-            setRandomColors(object, scale);
+            //var scale = chroma.scale(['red', 'green', 'blue']);
+            //setRandomColors(object, scale);
             mesh = object;
             scene.add(mesh);
         };
@@ -110,7 +110,7 @@
 
         var texture = THREE.ImageUtils.loadTexture('../assets/textures/Metro01.JPG');
         //texture.wrapS = texture.wrapT = THREE.MirroredRepeatWrapping;
-        loader.load('../assets/models/city.obj', '../assets/models/city.mtl', load);
+        loader.load('../assets/perpus/DINDINGRevisi.obj', '../assets/perpus/DINDINGRevisi.mtl', load);
         //texture.repeat.set( 1 , 1);
 
 
